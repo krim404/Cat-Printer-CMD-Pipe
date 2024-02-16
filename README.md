@@ -1,5 +1,6 @@
 # Cat-Printer-CMD-Pipe
-Uses https://github.com/NaitLee/Cat-Printer print.py to act as an command line tool to directly print your favorite text onto your thermo printer
+Uses https://github.com/NaitLee/Cat-Printer print.py to act as an command line tool to directly print your favorite text onto your thermo printer  
+Also uses https://github.com/FriedOrange/MatrixSans as a great printable font. Matrix-Sans is supplied in this repostory
 
 ![Demo](/demo.png?raw=true "Demo Picture")
 
