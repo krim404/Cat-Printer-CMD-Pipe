@@ -18,5 +18,5 @@ You can set some enviroment variables:
 * "cat_font_spacing" - the spacing between lines, default:  -2)
 * "cat_length" - the maximum amount of characters till linebreak, default:  60)
 * "cat_search" - the timeout to search for a compatible printer, default:  6)
-* "cat_tempfile" - the temporary file created to print, default: absolute_path + "/temp.pbm")
+* "cat_max-retries" - how many times printer.py should be called before giving up, default: 5)
 
