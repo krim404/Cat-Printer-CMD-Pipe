@@ -62,7 +62,7 @@ if __name__ == "__main__":
     tries = 0
     success = False
 
-    print(f"Printing...")
+    print(f"{input_text}\nInitialize printer")
     while tries < max_versuche and not success:
         result = subprocess.run([sys.executable, abspath + "/printer.py", "-s", str(searchtime), "-"], input=data,
                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=abspath)
