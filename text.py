@@ -46,11 +46,11 @@ def draw_text(text, font_path, font_size=20, line_spacing=5, text_width=50):
 if __name__ == "__main__":
     abspath = os.path.dirname(os.path.abspath(__file__))
     font = os.getenv("cat_font", abspath + "/MatrixSans-Regular.ttf")
-    font_size = os.getenv("cat_font_size", 20)
-    font_spacing = os.getenv("cat_font_spacing", -2)
-    length = os.getenv("cat_length", 60)
-    max_versuche = os.getenv("cat_max-retries", 5)
-    searchtime = os.getenv("cat_search", 6)
+    font_size = int(os.getenv("cat_font_size", 20))
+    font_spacing = int(os.getenv("cat_font_spacing", -2))
+    length = int(os.getenv("cat_length", 60))
+    max_versuche = int(os.getenv("cat_max-retries", 5))
+    searchtime = int(os.getenv("cat_search", 6))
 
     input_text = sys.stdin.read()
     image = draw_text(input_text, font, font_size, font_spacing, length)
